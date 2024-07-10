@@ -1,6 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import FurnitureList from "./components/FurnitureList";
+import { BrowserRouter as Router, Route, Routes, NavLink } from "react-router-dom";
+
+import Sofa from "./components/sofa";
+import Chair from "./components/chair";
+import Bed from "./components/bed";
+
 
 const App = () => {
   return (
@@ -9,19 +13,21 @@ const App = () => {
         <nav>
           <ul>
             <li>
-              <Link to="/sofa">Sofalar</Link>
+              <NavLink to="/sofa">Sofalar</NavLink>
             </li>
             <li>
-              <Link to="/chair">Stullar</Link>
+              <NavLink to="/chair">Stullar</NavLink>
             </li>
             <li>
-              <Link to="/bed">Karavotlar</Link>
+              <NavLink to="/bed">Karavotlar</NavLink>
             </li>
           </ul>
         </nav>
-        <Routes>
-          <Route path="/:category" component={FurnitureList} />
-        </Routes>
+         <Routes>
+          <Route path="/bed" Component={Bed}/>
+          <Route path="/sofa" Component={Sofa}/>
+          <Route path="/chair" Component={Chair}/>
+         </Routes>
       </div>
     </Router>
   );
