@@ -1,0 +1,25 @@
+{
+  "furniture": [
+    {
+      "id": 1,
+      "category": "sofa",
+      "name": "Luxury Sofa",
+      "price": 1200,
+      "image": "sofa1.jpg"
+    },
+    {
+      "id": 2,
+      "category": "chair",
+      "name": "Comfort Chair",
+      "price": 300,
+      "image": "chair1.jpg"
+    },
+    {
+      "id": 3,
+      "category": "bed",
+      "name": "King Bed",
+      "price": 1500,
+      "image": "bed1.jpg"
+    }
+  ]
+}
